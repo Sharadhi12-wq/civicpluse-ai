@@ -1,0 +1,30 @@
+PORT=4000
+FRONTEND_ORIGIN=http://localhost:5173
+
+# TinyFish (https://agent.tinyfish.ai)
+TINYFISH_API_KEY=your_tinyfish_key
+
+# Gemini (https://aistudio.google.com/apikey)
+GEMINI_API_KEY=your_gemini_key
+GEMINI_MODEL=gemini-2.5-flash
+
+# Supabase: use the SERVICE ROLE key, backend only. Never expose it in the frontend.
+SUPABASE_URL=https://xxxx.supabase.co
+SUPABASE_SERVICE_KEY=your_service_role_key
+SUPABASE_BUCKET=evidence
+
+# Google Maps (Geocoding API enabled)
+GOOGLE_MAPS_API_KEY=your_maps_key
+DEFAULT_CITY=Bengaluru
+
+# sandbox = nothing is sent to any real authority (default, use for demos)
+# email   = emails the complaint to the department contact found by TinyFish
+SUBMIT_MODE=sandbox
+OVERDUE_DAYS=7
+
+# Optional notifications
+SMTP_HOST=
+SMTP_PORT=587
+SMTP_USER=
+SMTP_PASS=
+SMTP_FROM=
